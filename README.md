@@ -1,1 +1,1 @@
-To-Do: queue, deque, vector, hash map, segment tree, etc.
+To-Do: queue, deque, vector, segment tree, Red-Black tree, hash maps.
