@@ -13,8 +13,7 @@ template <class T> class rmq {
         rmq(vector <T> in) {
             int n = in.size();
             a = in;
-            vector <vector <T> > __dp(n, vector <T> (log2(n) + 1));
-            dp = __dp;
+            dp.resize(n, vector <T> (log2(n) + 1));
             for (int i = 0; i < n; i++) {
                 dp[i][0] = a[i];
             }

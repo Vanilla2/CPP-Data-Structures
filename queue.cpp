@@ -72,6 +72,7 @@ int main(){
     q.push(23);
     q.push(26);
     q.push(27);
+    q.pop();
     q.show_from_back();
     q.show_from_front();
     return 0;

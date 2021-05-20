@@ -4,12 +4,11 @@ using namespace std;
 
 template <class T> class dsu {
     private:
-        vector <int> parent;
+        vector <T> parent;
 
     public:
-        dsu() {
-            vector <int> el (1000);
-            parent = el;
+        dsu(int size) {
+            parent.resize(size);
         }
         
         void make_set(T val) {
@@ -26,15 +25,11 @@ template <class T> class dsu {
             if (node == parent[node]) return node;
             return parent[node] = find_set(parent[node]);
         }
-
-        vector <int> getParent(){
-            return parent;
-        }
 };
 
 int main(){
     // Example
-    dsu <int> d;
+    dsu <int> d(50);
     d.make_set(1);
     d.make_set(2);
     d.make_set(3);
@@ -43,9 +38,5 @@ int main(){
     d.union_sets(3, 1);
     cout << d.find_set(1) << "\n";
     cout << d.find_set(2) << "\n";
-    vector <int> p = d.getParent();
-    for (int i = 0; i < 5; i++) {
-        cout << i << " " << p[i] << "\n";
-    }
     return 0;
 }
