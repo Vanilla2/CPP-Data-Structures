@@ -1,1 +1,1 @@
-To-Do: sqrt descomposition, segment tree, fenwick tree, set, hash maps.
+To-Do: sqrt descomposition, set, hash maps.
