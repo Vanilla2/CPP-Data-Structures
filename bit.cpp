@@ -10,7 +10,7 @@ template <class T> class bit {
 
     public: 
         bit(int maxval) {
-            n = maxval.size();
+            n = maxval;
             arr.resize(maxval);
         }
 
