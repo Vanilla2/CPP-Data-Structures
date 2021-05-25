@@ -14,7 +14,7 @@ template <class T> class bit {
             arr.resize(maxval);
         }
 
-        void update (int pos, int val) {
+        void update (int pos, T val) {
             for (int i = pos; i < n; i+= (i & -i)) {
                 arr[i] += val;
             }

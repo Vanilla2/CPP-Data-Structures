@@ -1,1 +1,1 @@
-To-Do: sqrt descomposition, set, hash maps.
+To-Do: set, hash maps, segment tree with lazy propagation.
