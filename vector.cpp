@@ -56,7 +56,7 @@ template <class T> class vector {
         T* end() {
             return &data[p_size];
         }
-        T &operator[](int i) {
+        T& operator[](int i) {
             return data[i];
         }
 };

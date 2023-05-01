@@ -42,7 +42,7 @@ template <class T> class segtree {
             if (px <= m) {
                 __update(node * 2, l, m, px, val);
             }
-            if (m + 1 <= ir) {
+            else {
                 __update(node * 2 + 1, m + 1, r, px, val);
             }
             tree[node] = calc(tree[node * 2], tree[node * 2 + 1]);
